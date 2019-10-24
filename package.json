@@ -1,0 +1,22 @@
+{
+  "name": "k-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peaceChierdo/k-ui.git"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "peaceChierdo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peaceChierdo/k-ui/issues"
+  },
+  "homepage": "https://github.com/peaceChierdo/k-ui#readme"
+}

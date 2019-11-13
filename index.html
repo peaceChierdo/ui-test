@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta dename="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>kui</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        :root{
+            --button-height: 32px;
+            --font-size: 18px;
+            --line-height: 1;
+            --button-padding: .5em 1.5em;
+            --border-radius: 10%;
+        }
+        #app{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <g-button icon="Sunflower-Seed" icon-position="right" :loading="loading1" @click="loading1 = !loading1">葵葵</g-button>
+        <g-button icon="setting1" :loading="loading2" @click="loading2 = !loading2">奎奎</g-button>
+        <g-button icon="Sunflower-Seed" icon-position="right" :loading="loading3" @click="loading3 = !loading3">葵葵</g-button>
+        <g-button-group>
+            <g-button icon="pagePre"></g-button>
+            <!-- <div><g-button>~~~</g-button></div> -->
+            <g-button>~~~</g-button>            
+            <g-button icon="pageNext"></g-button>
+        </g-button-group>
+        <div id="test"></div>
+    </div>
+<script src="./src/app.js"></script>
+<script src="//at.alicdn.com/t/font_1476035_4j2qv2ou5ot.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading {
+  animation: spin 1.5s infinite linear;
+}
+
+.g-button {
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  padding: var(--button-padding);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+.g-button:hover {
+  opacity: 0.9;
+}
+.g-button > .icon {
+  order: 1;
+  margin-right: 0.2em;
+}
+.g-button > .slot {
+  order: 2;
+}
+.g-button.icon-right > .icon {
+  order: 2;
+  margin-left: 0.2em;
+  margin-right: 0;
+}
+.g-button.icon-right > .slot {
+  order: 1;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  position: relative;
+  top: 0.05em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.group-wrapper {
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+  margin: 2em 0;
+}
+.group-wrapper > .g-button:first-child {
+  border-top-left-radius: var(--border-radius);
+}
+.group-wrapper > .g-button:not(:first-child) {
+  margin-left: -1px;
+  background: #fff;
+}
+.group-wrapper > .g-button:hover {
+  border: 1px solid yellowgreen;
+  z-index: 1;
+}

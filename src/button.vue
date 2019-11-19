@@ -10,8 +10,15 @@
 </template>
 
 <script>
+    // import Vue from 'vue'
+    import Icon from './icon'
+    // Vue.component('g-icon', Icon)
+
     export default {
         // props: ['icon', 'iconPosition']
+        components: {
+            'g-icon': Icon
+        },
         props: {
             icon: {},
             iconPosition: {

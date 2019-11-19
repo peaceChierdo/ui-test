@@ -45,20 +45,3 @@
 .g-button.icon-right > .slot {
   order: 1;
 }
-.group-wrapper {
-  position: relative;
-  display: inline-flex;
-  vertical-align: middle;
-  margin: 2em 0;
-}
-.group-wrapper > .g-button:first-child {
-  border-top-left-radius: var(--border-radius);
-}
-.group-wrapper > .g-button:not(:first-child) {
-  margin-left: -1px;
-  background: #fff;
-}
-.group-wrapper > .g-button:hover {
-  border: 1px solid yellowgreen;
-  z-index: 1;
-}
